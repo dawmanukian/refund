@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+.section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  color: #141414;
+  font-family: Urbanist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  margin-bottom: 76px;
+}
+.boxs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+.box {
+  display: flex;
+  width: 900px;
+  height: 64px;
+  padding: 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #141414;
+  background: #fff;
+}
+.box p {
+  color: #141414;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 900px){
+  .box {
+    width: 100%;
+  }
+}

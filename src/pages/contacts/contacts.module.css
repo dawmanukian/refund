@@ -1,0 +1,125 @@
+.contacts {
+  width: 100%;
+  height: 325px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../images/contacts.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.data {
+  width: 100%;
+  width: 1218px;
+  position: relative;
+}
+.data span {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.data p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: capitalize;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+.contacts svg {
+  position: absolute;
+  left: 0px;
+}
+.soc {
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sc {
+  width: 178px;
+  height: 271px;
+  border: 1px solid #141414;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sc_panel {
+  display: flex;
+  gap: 30px;
+}
+.icon {
+  margin-bottom: 40px;
+  margin-top: 56px;
+}
+.header {
+  color: #141414;
+  margin-top: 24px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.click {
+  color: #2d2d2d;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.soc_link {
+  display: flex;
+  gap: 16px;
+}
+.soc_link {
+  color: #f00;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+  text-decoration-line: underline;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  margin-top: 32px;
+}
+.help {
+  color: #141414;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.75px; /* 120.536% */
+}
+.inf {
+  color: #141414;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 47.5px; /* 197.917% */
+}
+.soc_data {
+  display: flex;
+  width: 100%;
+  max-width: 1218px;
+  gap: 104px;
+}

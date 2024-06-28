@@ -1,0 +1,137 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(21, 23, 26, 0.4) 36.98%,
+      rgba(21, 23, 26, 0.1) 100%
+    ),
+    #2c2c2c;
+  padding: 80px 0px 64px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.data {
+  width: 100%;
+  max-width: 1218px;
+  height: 191px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 40px;
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.social {
+  width: 100%;
+  max-width: 1218px;
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  background: #fff;
+  height: 24px;
+  width: 1px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.social span {
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.texts {
+  display: flex;
+}
+.soc {
+  display: flex;
+  gap: 16px;
+}
+.refcat {
+  color: #c6c6c6;
+  font-family: Inter;
+  font-size: 14.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 498px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  margin-top: 14.5px;
+}
+.links_panel {
+  display: flex;
+  gap: 30px;
+}
+.links_panel a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.panel {
+  max-width: 624px;
+  width: 100%;
+}
+.data_m {
+  display: none;
+  height: 421px;
+}
+.text_block {
+  color: #c6c6c6;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 191.667% */
+  margin-top: 24px;
+}
+.m_links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.trm {
+  color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 200% */
+}
+@media screen and (max-width: 720px) {
+  .data,
+  .social {
+    display: none;
+  }
+  .data_m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    display: flex;
+    padding: 0px;
+    padding-top: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .data,
+  .social {
+    width: 95%;
+  }
+}
