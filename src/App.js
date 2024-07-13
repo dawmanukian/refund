@@ -9,12 +9,19 @@ import Privacy from "./pages/privacy/Privacy";
 import Terms from "./pages/terms/Terms";
 import PlaceOrder from "./pages/place-order/PlaceOrder";
 import Store from "./pages/store/Store";
+import Menu from "./components/mobile_menu/MobileMenu";
+import MobileMenu from "./components/mobile_menu/MobileMenu";
+import { useState } from "react";
 
 function App() {
+
+  const [showMenu, setShowMenu] = useState(false)
+
   return (
     <>
       <Router>
-        <Header />
+        <Header onOpen={() => setShowMenu(true)}/>
+        {showMenu && <MobileMenu onHideMenu={() => setShowMenu(false)}/>}
         <Routes>
           <Route path="/*" element={<Error />}/>
           <Route path="/contacts" element={<Contacts />} />

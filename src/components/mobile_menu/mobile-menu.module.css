@@ -1,27 +1,28 @@
 .menu {
   position: fixed;
   min-height: 100vh;
-  height: 200%;
   width: 205px;
+  height: 100%;
   background: #ce464a;
   right: 0px;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
   flex-direction: column;
   animation: menu_anim 0.7s;
   transition: all ease .5s;
+  z-index: 9999;
+  top: 0px;
 }
 .menu svg {
   z-index: 99;
   margin-right: 20px;
-  margin-top: 210px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 .menu > div {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 32px;
 }
 ul {
   list-style: none;

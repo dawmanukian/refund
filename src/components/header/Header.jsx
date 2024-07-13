@@ -6,13 +6,12 @@ import { ReactComponent as LogoM } from "../../images/logo_mob.svg";
 import { ReactComponent as Menu } from "../../images/menu.svg";
 import MobileMenu from "../mobile_menu/MobileMenu";
 
-const Header = () => {
+const Header = ({onOpen}) => {
 
   const [showMenu, setShowMenu] = useState(false)
 
   return (
     <header className={classes.header}>
-      {showMenu && <MobileMenu onHideMenu={() => setShowMenu(false)}/>}
       <div className={classes.links}>
         <Link to={"/"} style={{ margin: "0px" }}>
           <LogoM className={classes.logoM}/>
@@ -27,7 +26,7 @@ const Header = () => {
       <Link to={"/order"}>
         <button className={classes.submit}>SUBMIT ORDER</button>
       </Link>
-      <Menu className={classes.menu_icon} onClick={() => setShowMenu(true)}/>
+      <Menu className={classes.menu_icon} onClick={onOpen}/>
     </header>
   );
 };
