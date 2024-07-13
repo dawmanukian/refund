@@ -33,6 +33,7 @@
   border-radius: 8px;
   border: 1px solid #141414;
   background: #fff;
+  cursor: pointer;
 }
 .box p {
   color: #141414;
