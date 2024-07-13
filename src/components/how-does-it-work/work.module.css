@@ -218,10 +218,23 @@
 }
 @media screen and (max-width: 520px) {
   .boxs {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: none;
   }
   .box {
     flex-direction:inherit;
+  }
+  .header {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+  .pay {
+    margin-bottom: 48px;
+  }
+  .pay span {
+    font-size: 14px;
+  }
+  .pay_icon {
+    width: 24px;
+    height: 24px;
   }
 }

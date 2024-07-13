@@ -15,6 +15,7 @@
   line-height: normal;
   letter-spacing: 0.96px;
   margin-bottom: 76px;
+  text-align: center;
 }
 .boxs {
   display: flex;
@@ -43,8 +44,27 @@
   letter-spacing: 0.4px;
 }
 
-@media screen and (max-width: 900px){
-  .box {
-    width: 100%;
+@media screen and (max-width: 520px) {
+  .header {
+    font-size: 24px;
+    margin-bottom: 48px;
   }
 }
+
+@media screen and (max-width: 900px){
+  .box p {
+    font-size: 14px;
+  }
+  .box {
+    max-width: 350px;
+    width: 350px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .box {
+    max-width: 250px;
+    width: 250px;
+  }
+}
+

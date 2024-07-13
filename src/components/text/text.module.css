@@ -70,6 +70,7 @@
 @media screen and (max-width: 880px){
   .text {
     font-size: 16px;
+    text-align: center;
   }
   .block {
     width: auto;
@@ -77,5 +78,10 @@
   .top, .btm {
     width: 17px;
     height: 14px;
+  }
+}
+@media screen and (max-width: 410px){
+  .block img {
+    display: none;
   }
 }

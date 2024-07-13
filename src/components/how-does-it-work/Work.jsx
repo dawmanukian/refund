@@ -59,7 +59,7 @@ const Work = () => {
         </div>
       </div>
       <div className={classes.pay}>
-        <P />
+        <P className={classes.pay_icon}/>
         <span>You pay for the work only after it is completed!</span>
       </div>
       <div className={classes.phone}>
