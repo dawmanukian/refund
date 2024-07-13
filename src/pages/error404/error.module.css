@@ -30,3 +30,8 @@
   line-height: normal;
   margin: 0px;
 }
+@media screen and (max-width: 620px){
+  .er {
+    width: 100%;
+  }
+}

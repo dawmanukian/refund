@@ -8,7 +8,7 @@ const Error = () => {
         <div className={classes.data}>
             <p className={classes.page_name}>Error 404</p>
             <p className={classes.info}>This page does not exist or is inaccessible</p>
-            <ErrorImg />
+            <ErrorImg className={classes.er}/>
         </div>
     </div>
   )
