@@ -90,3 +90,34 @@
     margin-left: 3px;
     margin-right: 3px;
 }
+
+@media screen and (max-width: 900px){
+  .data {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .data img {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    align-items: center;
+  }
+  .data p {
+    margin: 0;
+    font-size: 36px;
+  }
+  .head {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+}
