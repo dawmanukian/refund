@@ -69,7 +69,7 @@ const Contacts = () => {
               <span className={classes.click}>Click here...</span>
             </div>
           </div>
-          <div>
+          <div className={classes.soc_inf}>
             <p className={classes.help}>Can't get over?</p>
             <span className={classes.inf}>Copy the data from here:</span>
             <div className={classes.links}>

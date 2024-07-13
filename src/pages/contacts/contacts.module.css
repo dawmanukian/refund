@@ -123,3 +123,42 @@
   max-width: 1218px;
   gap: 104px;
 }
+@media screen and (max-width: 1020px){
+  .soc_inf {
+    display: none;
+  }
+  .contacts svg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 660px){
+  .data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sc {
+    width: auto;
+    flex-direction: row;
+    display: flex;
+    height: 101px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sc .header {
+    margin-top: 0;
+  }
+  .sc_panel {
+    display: grid;
+    grid-template-columns: 350px;
+  }
+  .soc_data {
+    justify-content: center;
+  }
+  .icon {
+    width: 46px;
+    height: 48px;
+    margin: 0;
+  }
+}
