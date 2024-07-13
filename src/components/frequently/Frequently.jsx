@@ -25,7 +25,7 @@ const Frequently = () => {
             onClick={() => setFreq1(!freq1)}
           >
             <p>How does RefCat Refunds work?</p>
-            <Arrow />
+            <Arrow style={freq1 ? {transform: "rotate(180deg)"} : {transform: "rotate(0deg)"}} />
           </div>
           {freq1 && (
             <div
@@ -59,7 +59,7 @@ const Frequently = () => {
             }
           >
             <p>How much does it cost?</p>
-            <Arrow />
+            <Arrow style={freq2 ? {transform: "rotate(180deg)"} : {transform: "rotate(0deg)"}}/>
           </div>
           {freq2 && (
             <div
@@ -93,7 +93,7 @@ const Frequently = () => {
             onClick={() => setFreq3(!freq3)}
           >
             <p>How many times can I do this?</p>
-            <Arrow />
+            <Arrow style={freq3 ? {transform: "rotate(180deg)"} : {transform: "rotate(0deg)"}}/>
           </div>
           {freq3 && (
             <div
