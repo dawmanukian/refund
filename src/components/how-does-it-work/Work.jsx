@@ -62,6 +62,18 @@ const Work = () => {
         <P className={classes.pay_icon}/>
         <span>You pay for the work only after it is completed!</span>
       </div>
+      <div className={classes.phone_mobile}>
+        <div>
+          <p className={classes.mb_p}>More than 300 satisfied customers </p>
+          <div className={classes.lines}>
+            <div className={classes.r}></div>
+            <div className={classes.line}></div>
+            <div className={classes.r}></div>
+          </div>
+          <p className={classes.mb_p}>and more than 1000 completed orders</p>
+          <button className={classes.mb_submit}>SUBMIT ORDER</button>
+        </div>
+      </div>
       <div className={classes.phone}>
         <div className={classes.text}>
           <p className={classes.more}>

@@ -26,6 +26,8 @@
   justify-content: space-between;
   gap: 32px;
   margin-bottom: 48px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .box {
   height: 448px;
@@ -208,6 +210,43 @@
   justify-content: center;
   margin-top: 64px;
 }
+.phone_mobile {
+  width: 295px;
+  height: 490px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../images/mob_bg.png);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+.phone_mobile > div {
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mb_p {
+  color: #fff;
+  font-size: 14px;
+}
+.mb_submit {
+  width: 184px;
+  height: 48px;
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  background: #303030;
+  margin-top: 38px;
+}
 @media screen and (max-width: 1250px) {
   .boxs {
     display: grid;
@@ -236,5 +275,13 @@
   .pay_icon {
     width: 24px;
     height: 24px;
+  }
+}
+@media screen and (max-width: 670px){
+  .phone {
+    display: none;
+  }
+  .phone_mobile {
+    display: flex;
   }
 }
