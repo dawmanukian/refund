@@ -54,7 +54,15 @@
   gap: 72px;
   padding-bottom: 16px;
 }
-
+.head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.head svg {
+  min-height: 48px;
+  min-width: 48px;
+}
 @media screen and (max-width: 1140px){
   .boxs {
     display: grid;
@@ -76,6 +84,6 @@
 @media screen and (max-width: 520px) {
   .header {
     font-size: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 38px;
   }
 }
