@@ -142,23 +142,23 @@ const PlaceOrder = () => {
             <span className={classes.inform}>
               RefCat Refunds is raising standards with its efficient results:
             </span>
-            <div>
-              <Check />
+            <div className={classes.ques_check}>
+              <Check className={classes.check_icon}/>
               <span>
                 RefCat Refunds is the most reliable, effcient, and trusted
                 refunding service on the market, offering easy solutions with
                 its powerful results.
               </span>
             </div>
-            <div>
-              <Check />
+            <div className={classes.ques_check}>
+              <Check className={classes.check_icon}/>
               <span>
                 Our refund success rate is the highest, above any other
                 refunding service.
               </span>
             </div>
-            <div>
-              <Check />
+            <div className={classes.ques_check}>
+              <Check className={classes.check_icon}/>
               <span>
                 No risk taking choices are relevant. You will be confident of
                 getting your funds back.

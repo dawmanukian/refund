@@ -197,6 +197,14 @@
   position: absolute;
   top: -33px;
 }
+.ques_check {
+  display: flex;
+  gap: 17px;
+}
+.ques_check svg {
+  min-width: 21px;
+  min-height: 21px;
+}
 .have_ques {
   color: #2c2c2c;
   font-family: Inter;

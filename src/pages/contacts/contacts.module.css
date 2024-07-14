@@ -57,6 +57,7 @@
 .sc_panel {
   display: flex;
   gap: 30px;
+  margin-top: 13px;
 }
 .icon {
   margin-bottom: 40px;
@@ -85,7 +86,7 @@
   gap: 16px;
 }
 .soc_link {
-  color: #f00;
+  color: #000;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
