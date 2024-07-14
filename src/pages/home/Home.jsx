@@ -8,6 +8,7 @@ import Interesting from "../../components/interesting/Interesting";
 import Text from "../../components/text/Text";
 import Convinced from "../../components/convinced/Convinced";
 import Frequently from "../../components/frequently/Frequently";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,8 +17,14 @@ const Home = () => {
         <div className={classes.data_m}>
           <BoxM />
           <p className={classes.mob_header}>Let us get your funds back</p>
-          <p className={classes.mob_text}>Get your funds back, save valuable time and headache, and profit with RefCat Refunds, the most efficient refunding service of all time.</p>
-          <button className={classes.get_started_mob}>GET STARTED</button>
+          <p className={classes.mob_text}>
+            Get your funds back, save valuable time and headache, and profit
+            with RefCat Refunds, the most efficient refunding service of all
+            time.
+          </p>
+          <Link to={"/orders"}>
+            <button className={classes.get_started_mob}>GET STARTED</button>
+          </Link>
           <p className={classes.how_m}>HOW IT WORKS</p>
         </div>
         <div className={classes.data}>
@@ -30,7 +37,9 @@ const Home = () => {
               time.
             </span>
             <div className={classes.links}>
-              <button className={classes.get_started}>GET STARTED</button>
+              <Link to={'/order'}>
+                <button className={classes.get_started}>GET STARTED</button>
+              </Link>
               <span>HOW IT WORKS</span>
             </div>
           </div>

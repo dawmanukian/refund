@@ -5,6 +5,7 @@ import { ReactComponent as Order } from "../../images/order.svg";
 import { ReactComponent as Refund } from "../../images/refund.svg";
 import { ReactComponent as Payment } from "../../images/payment.svg";
 import { ReactComponent as P } from "../../images/p.svg";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
@@ -59,7 +60,7 @@ const Work = () => {
         </div>
       </div>
       <div className={classes.pay}>
-        <P className={classes.pay_icon}/>
+        <P className={classes.pay_icon} />
         <span>You pay for the work only after it is completed!</span>
       </div>
       <div className={classes.phone_mobile}>
@@ -71,7 +72,9 @@ const Work = () => {
             <div className={classes.r}></div>
           </div>
           <p className={classes.mb_p}>and more than 1000 completed orders</p>
-          <button className={classes.mb_submit}>SUBMIT ORDER</button>
+          <Link to={'/order'}>
+            <button className={classes.mb_submit}>SUBMIT ORDER</button>
+          </Link>
         </div>
       </div>
       <div className={classes.phone}>
@@ -88,7 +91,9 @@ const Work = () => {
             and more than <span>1000</span> completed orders
           </p>
           <div className={classes.submit}>
-            <button>SUBMIT ORDER</button>
+            <Link to={"/order"}>
+              <button>SUBMIT ORDER</button>
+            </Link>
           </div>
         </div>
       </div>

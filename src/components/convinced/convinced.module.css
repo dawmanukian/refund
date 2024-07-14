@@ -18,6 +18,10 @@
   line-height: normal;
   z-index: 1;
 }
+.con a {
+  z-index: 999;
+  cursor: pointer;
+}
 .con button {
   display: flex;
   height: 48px;
@@ -34,7 +38,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  z-index: 1;
+  z-index: 999;
+  cursor: pointer;
 }
 .con img {
   position: absolute;

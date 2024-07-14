@@ -8,6 +8,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 48px 56px repeat(11, 48px) 56px 48px 48px;
   margin-bottom: 90px;
+  transition: all ease .5s;
 }
 .storelist div {
   border-bottom: 1px solid #c2c2c2;

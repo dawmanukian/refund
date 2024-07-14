@@ -204,6 +204,7 @@
   font-weight: 500;
   line-height: normal;
   width: 184px;
+  cursor: pointer;
 }
 .submit {
   display: flex;
