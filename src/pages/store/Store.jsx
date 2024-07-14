@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./store.module.css";
 import Stores from "../../images/store_pg.png";
+import StoreList from "../../components/storelist/StoreList";
 
 const Store = () => {
   const data = [
@@ -126,22 +127,12 @@ const Store = () => {
           <img src={Stores} alt="" />
         </div>
       </div>
-      {/* <div className={classes.page}>
+      <div className={classes.page}>
         <div className={classes.page_data}>
           <span className={classes.pick}>Pick a Store of Your Choice</span>
-          <div className={classes.table}>
-            <div className={classes.ln}>
-              <div className={classes.block}>Store</div>
-              <div className={classes.block}>Price Limit</div>
-              <div className={classes.block}>Item Limit</div>
-              <div className={classes.block}>Duration</div>
-              <div className={classes.block}>Countries</div>
-              <div className={classes.block}>Notes</div>
-            </div>
-            <div className={classes.brand}></div>
-          </div>
+          <StoreList />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

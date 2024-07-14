@@ -1,0 +1,52 @@
+.storelist {
+    width: 100%;
+    max-width: 1216px;
+    height: 784px;
+    border-radius: 8px;
+    border: 1px solid #141414;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 56px repeat(11, 48px) 56px 48px 48px;
+}
+.storelist div {
+    border-bottom: 1px solid #C2C2C2;
+    display: grid;
+    grid-template-columns: 148px 113px 113px 167px 200px 475px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.storelist div:nth-child(2) {
+    background: #2C2C2C;
+    display: flex;
+    justify-content: center;
+}
+.storelist div:nth-child(14) {
+    background: #2C2C2C;
+    display: flex;
+    justify-content: center;
+}
+.storelist div:nth-child(3) {
+    background: #F2F3F4;
+}
+.storelist div:nth-child(5) {
+    background: #F2F3F4
+}
+.storelist div:nth-child(7) {
+    background: #F2F3F4
+}
+.storelist div:nth-child(9) {
+    background: #F2F3F4
+}
+.storelist div:nth-child(11) {
+    background: #F2F3F4
+}
+.storelist div:nth-child(13) {
+    background: #F2F3F4
+}
+.storelist div:nth-child(15) {
+    background: #F2F3F4
+}
+.storelist div:nth-child(17) {
+    background: #F2F3F4
+}
