@@ -121,3 +121,12 @@
     margin-right: 36px;
   }
 }
+@media screen and (max-width: 500px){
+  .pick {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+  .page {
+    margin-top: 32px;
+  }
+}

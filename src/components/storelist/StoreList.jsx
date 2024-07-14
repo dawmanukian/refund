@@ -15,7 +15,7 @@ const StoreList = () => {
         <span>Notes</span>
       </div>
       <div>
-        <Amazon />
+        <Amazon className={classes.a_icon}/>
       </div>
       <div>
         <span>Amazon.com</span>
@@ -27,93 +27,93 @@ const StoreList = () => {
       </div>
       <div>
         <span>Amazon.ca</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>1-3 days</span>
+        <span>WORLDWIDE</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.co.uk</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>1-3 days</span>
+        <span>CA</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.es</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>3-7 days</span>
+        <span>WORLDWIDE</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.de</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>3-7 days</span>
+        <span>WORLDWIDE</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.fr</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
-        <span>NNo item and price limits for aged accounts. Apple prod</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>3-7 days</span>
+        <span>WORLDWIDE</span>
+        <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.au</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>5-9 days</span>
+        <span>AU</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.pl</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>3-7 days</span>
+        <span>WORLDWIDE</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.ae</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>5-9 days</span>
+        <span>AE, BH, KW, OM, QA, SA</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Amazon.sa</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>5-9 days</span>
+        <span>SA</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
         <span>Order for you</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>$5000</span>
+        <span>∞</span>
+        <span>7-14 days</span>
+        <span>WORLDWIDE</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
-        <PayPal />
+        <PayPal className={classes.a_icon}/>
       </div>
       <div>
         <span>PayPal.com</span>
-        <span>Price Limit</span>
-        <span>Item Limit</span>
-        <span>Duration</span>
-        <span>Countries</span>
+        <span>∞</span>
+        <span>∞</span>
+        <span>1-5 days</span>
+        <span>WORLDWIDE</span>
         <span>No item and price limits for aged accounts. Apple prod</span>
       </div>
       <div>
