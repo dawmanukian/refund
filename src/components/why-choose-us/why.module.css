@@ -65,7 +65,6 @@
   min-height: 48px;
   min-width: 48px;
 }
-
 @media screen and (max-width: 1140px){
   .boxs {
     display: grid;
@@ -74,7 +73,11 @@
     gap: 30px;
   }
   .brands {
-    gap: 30px;
+    gap: 16px;
+  }
+  .brands svg {
+    min-width: 40px;
+    min-height: 40px;
   }
 }
 @media screen and (max-width: 640px){
