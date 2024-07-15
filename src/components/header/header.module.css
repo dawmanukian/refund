@@ -28,8 +28,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 a {
   text-decoration: none;
@@ -51,12 +49,38 @@ a {
   justify-content: center;
   align-items: center;
   font-family: Inter;
+  transition: all ease .7s;
+}
+.submit:hover {
+  background: #8E8E8E;
 }
 .menu_icon {
   display: none;
 }
 .logoM {
   display: none;
+}
+.links a:nth-child(1) {
+  border: none;
+  padding: 0px;
+}
+.links a:nth-child(2) {
+  border: none;
+  padding: 0px;
+  
+}
+.links a {
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease .4s;
+}
+.lnk:hover {
+  border-bottom: 1px solid #B4B4B4;
+  color:#B4B4B4;
 }
 @media screen and (max-width: 720px) {
   .logoM {

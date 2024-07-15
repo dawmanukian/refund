@@ -58,6 +58,7 @@
   font-weight: 500;
   line-height: normal;
   cursor: pointer;
+  transition: all ease 0.7s;
 }
 .links {
   display: flex;
@@ -126,6 +127,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: all ease 0.7s;
 }
 .how_m {
   color: #e8e8e8;
@@ -136,6 +138,10 @@
   line-height: normal;
   text-transform: uppercase;
   margin-top: 19.5px;
+}
+.get_started:hover,
+.get_started_mob:hover {
+  background: #b53b3e;
 }
 @media screen and (max-width: 1218px) {
   .data_m {
