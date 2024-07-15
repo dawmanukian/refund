@@ -67,12 +67,16 @@
 }
 .links span {
   color: #fff;
-
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all ease .2s;
 }
 .page {
   width: 100%;
@@ -138,10 +142,23 @@
   line-height: normal;
   text-transform: uppercase;
   margin-top: 19.5px;
+  cursor: pointer;
+  height: 48px;
 }
 .get_started:hover,
 .get_started_mob:hover {
   background: #b53b3e;
+}
+.how_m:hover {
+  border-bottom: 2px solid #B4B4B4;
+  color: #B4B4B4;
+  cursor: pointer;
+}
+.links span:hover {
+  border-bottom: 2px solid #B4B4B4;
+  color: #B4B4B4;
+  cursor: pointer;
+  margin-top: -2px;
 }
 @media screen and (max-width: 1218px) {
   .data_m {

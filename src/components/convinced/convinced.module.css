@@ -40,6 +40,10 @@
   line-height: normal;
   z-index: 999;
   cursor: pointer;
+  transition: all ease .5s;
+}
+.con button:hover {
+  background: #B53B3E;
 }
 .con img {
   position: absolute;
