@@ -21,96 +21,107 @@ const PlaceOrder = () => {
           <img src={Order} alt="" />
         </div>
       </div>
-      <div className={classes.forms} style={!isFeedBack ? { height: "1298px" } : null}>
+      <div
+        className={classes.forms}
+        style={!isFeedBack ? { height: "1298px" } : null}
+      >
         <div className={classes.forms_data}>
           <form className={classes.form} action="">
             <div className={classes.tabs}>
-              <div onClick={() => setIsFeedBack(true)} style={isFeedBack ? { borderBottom: "2px solid #2c2c2c" } : null}>
+              <div
+                onClick={() => setIsFeedBack(true)}
+                style={
+                  isFeedBack ? { borderBottom: "2px solid #2c2c2c" } : null
+                }
+              >
                 <span>Feedback</span>
               </div>
-              <div onClick={() => setIsFeedBack(false)} style={!isFeedBack ? { borderBottom: "2px solid #2c2c2c" } : null}>
+              <div
+                onClick={() => setIsFeedBack(false)}
+                style={
+                  !isFeedBack ? { borderBottom: "2px solid #2c2c2c" } : null
+                }
+              >
                 <span>Order Now</span>
               </div>
             </div>
-            {
-                isFeedBack ? (
-                    <>
-<div className={classes.frm}>
-              <p className={classes.form_header}>How to contact you?</p>
-              <p className={classes.req}>
-                <span>*</span> - required field
-              </p>
-            </div>
-            <div className={classes.inpts}>
-              <div className={classes.inpt}>
-                <span>Telegram / Email / WhatsApp *</span>
-                <Chevron />
-              </div>
-              <div className={classes.inpt}>
-                <span>What would you like to receive? *</span>
-                <Chevron />
-              </div>
-              <textarea className={classes.textarea}></textarea>
-            </div>
-                    </>
-                ) : (
-                    <>
-                    <div className={classes.frm}>
-              <p className={classes.form_header}>Details</p>
-            </div>
-            <div className={classes.inpts}>
-              <div className={classes.inpt}>
-                <span>Telegram / Email / WhatsApp *</span>
-                <Chevron />
-              </div>
-              <div className={classes.inpt}>
-                <span>What would you like to receive? *</span>
-                <Chevron />
-              </div>
-              <div className={classes.inpt}>
-                <span>Store *</span>
-                <Chevron />
-              </div>
-              <textarea className={classes.textarea}></textarea>
-            </div>
-            <div className={classes.frm}>
-              <p className={classes.form_header}>Order Information</p>
-            </div>
-            <div>
-              <div className={classes.type_inpts}>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-              </div>
-              <div className={classes.line_inpt}>
-                <div className={classes.type_inpt}></div>
-              </div>
-            </div>
-            <div className={classes.frm}>
-              <p className={classes.form_header}>Shipping Information</p>
-            </div>
-            <div>
-              <div className={classes.type_inpts}>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-                <div className={classes.type_inpt}></div>
-              </div>
-              <div className={classes.line_inpt}>
-                <div className={classes.inpt}>
-                  <span>Country *</span>
-                  <Chevron />
+            {isFeedBack ? (
+              <>
+                <div className={classes.frm}>
+                  <p className={classes.form_header}>How to contact you?</p>
+                  <p className={classes.req}>
+                    <span>*</span> - required field
+                  </p>
                 </div>
-              </div>
-            </div>
-                    </>
-                )
-            }
+                <div className={classes.inpts}>
+                  <div className={classes.inpt}>
+                    <span>Telegram / Email / WhatsApp *</span>
+                    <Chevron />
+                  </div>
+                  <div className={classes.inpt}>
+                    <span>What would you like to receive? *</span>
+                    <Chevron />
+                  </div>
+                  <textarea className={classes.textarea}></textarea>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className={classes.frm}>
+                  <p className={classes.form_header}>Details</p>
+                </div>
+                <div className={classes.inpts}>
+                  <div className={classes.inpt}>
+                    <span>Telegram / Email / WhatsApp *</span>
+                    <Chevron />
+                  </div>
+                  <div className={classes.inpt}>
+                    <span>What would you like to receive? *</span>
+                    <Chevron />
+                  </div>
+                  <div className={classes.inpt}>
+                    <span>Store *</span>
+                    <Chevron />
+                  </div>
+                  <textarea className={classes.textarea}></textarea>
+                </div>
+                <div className={classes.frm}>
+                  <p className={classes.form_header}>Order Information</p>
+                </div>
+                <div>
+                  <div className={classes.type_inpts}>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                  </div>
+                  <div className={classes.line_inpt}>
+                    <div className={classes.type_inpt}></div>
+                  </div>
+                </div>
+                <div className={classes.frm}>
+                  <p className={classes.form_header}>Shipping Information</p>
+                </div>
+                <div>
+                  <div className={classes.type_inpts}>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                    <div className={classes.type_inpt}></div>
+                  </div>
+                  <div className={classes.line_inpt}>
+                    <div className={classes.inpt}>
+                      <span>Country *</span>
+                      <Chevron />
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
             {/* <div className={classes.frm}>
               <p className={classes.form_header}>How to contact you?</p>
               <p className={classes.req}>
@@ -128,7 +139,7 @@ const PlaceOrder = () => {
               </div>
               <textarea className={classes.textarea}></textarea>
             </div> */}
-            
+
             <div className={classes.submit}>
               <button>Submit New Order</button>
             </div>
@@ -143,7 +154,7 @@ const PlaceOrder = () => {
               RefCat Refunds is raising standards with its efficient results:
             </span>
             <div className={classes.ques_check}>
-              <Check className={classes.check_icon}/>
+              <Check className={classes.check_icon} />
               <span>
                 RefCat Refunds is the most reliable, effcient, and trusted
                 refunding service on the market, offering easy solutions with
@@ -151,14 +162,14 @@ const PlaceOrder = () => {
               </span>
             </div>
             <div className={classes.ques_check}>
-              <Check className={classes.check_icon}/>
+              <Check className={classes.check_icon} />
               <span>
                 Our refund success rate is the highest, above any other
                 refunding service.
               </span>
             </div>
             <div className={classes.ques_check}>
-              <Check className={classes.check_icon}/>
+              <Check className={classes.check_icon} />
               <span>
                 No risk taking choices are relevant. You will be confident of
                 getting your funds back.

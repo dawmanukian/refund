@@ -265,7 +265,6 @@
   .form {
     left: auto;
     width: 350px;
-    height: 382px;
     top: 0;
     margin-top: 32px;
   }
@@ -384,5 +383,16 @@
     text-align: center;
     margin-left: 36px;
     margin-right: 36px;
+  }
+  .type_inpts {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .type_inpt {
+    height: 28.8px;
+  }
+  .line_inpt {
+    margin-left: 19px;
+    margin-right: 19px;
   }
 }
