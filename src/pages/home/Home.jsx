@@ -22,7 +22,7 @@ const Home = () => {
             with RefCat Refunds, the most efficient refunding service of all
             time.
           </p>
-          <Link to={"/orders"}>
+          <Link to={"/order"}>
             <button className={classes.get_started_mob}>GET STARTED</button>
           </Link>
           <p className={classes.how_m}>HOW IT WORKS</p>
