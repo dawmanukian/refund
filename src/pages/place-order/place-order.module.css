@@ -245,14 +245,144 @@
   flex: 1 0 0;
 }
 .type_inpts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-left: 32px;
-    margin-right: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .line_inpt {
-    margin-top: 20px;
-    margin-left: 32px;
-    margin-right: 32px;
+  margin-top: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 1220px) {
+  .forms_data {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    left: auto;
+    width: 350px;
+    height: 382px;
+    top: 0;
+    margin-top: 32px;
+  }
+  .ques {
+    width: 350px;
+    top: auto;
+    position: relative;
+    gap: 19px;
+    padding-left: 0px;
+    margin-bottom: 48px;
+  }
+  .forms {
+    height: 766px;
+  }
+  .have_ques, .ar, .get_in {
+    font-size: 16px;
+  }
+  .have_ques {
+    line-height: 24.3px;
+  }
+  .get_in {
+    line-height: 24.3px;
+  }
+  .frm {
+    margin-top: 24px;
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .inpt {
+    height: 28.8px;
+  }
+  .inpts {
+    gap: 12px;
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .inpt span {
+    font-size: 10px;
+  }
+  .form_header {
+    margin-bottom: 0px;
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+  .textarea {
+    height: 108px;
+    padding-top: 7.2px;
+    padding-left: 9.6px;
+    padding-right: 9.6px;
+  }
+  .submit button {
+    margin-top: 24px;
+    margin-bottom: 19px;
+    height: 32px;
+    width: 135px;
+    font-size: 12px;
+    padding: 0px;
+    justify-content: center;
+  }
+  .tabs div{
+    height: 36px;
+  }
+  .tabs div span {
+    font-size: 10px;
+  }
+  .req {
+    font-size: 10px;
+    line-height: 13.5px;
+  }
+  .tabs {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .submit {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .inform {
+    font-size: 16px;
+    line-height: 28.5px;
+  }
+  .ques_check span {
+    font-size: 10px;
+  }
+  .ques_check {
+    gap: 4px;
+  }
+  .header {
+    height: 424px;
+    background-image: url(../../images/mm.png);
+  }
+  .data {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .data img {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    align-items: center;
+  }
+  .data p {
+    margin: 0;
+    font-size: 36px;
+  }
+  .head {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
 }
