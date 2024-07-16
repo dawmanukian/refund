@@ -79,26 +79,22 @@ const PlaceOrder = () => {
                     <span>What would you like to receive? *</span>
                     <Chevron />
                   </div>
-                  <div className={classes.inpt}>
-                    <span>Store *</span>
-                    <Chevron />
-                  </div>
-                  <textarea className={classes.textarea}></textarea>
+                  <textarea className={classes.textarea} placeholder="A comment"></textarea>
                 </div>
                 <div className={classes.frm}>
                   <p className={classes.form_header}>Order Information</p>
                 </div>
                 <div>
                   <div className={classes.type_inpts}>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
+                    <input className={classes.type_inpt} type="email" placeholder="Email Address *"></input>
+                    <input className={classes.type_inpt} placeholder="Total Billed Amount (tax & ship… * "></input>
+                    <input className={classes.type_inpt}  placeholder="Order ID/Number *"></input>
+                    <input className={classes.type_inpt}  placeholder="Tracking Number(s) *"></input>
+                    <input className={classes.type_inpt} type="email" placeholder="Email Address *"></input>
+                    <input className={classes.type_inpt} placeholder="Total Billed Amount (tax & ship…"></input>
                   </div>
-                  <div className={classes.line_inpt}>
-                    <div className={classes.type_inpt}></div>
+                  <div className={classes.line_inpt} >
+                    <input className={classes.type_inpt} style={{maxWidth: "none"}} placeholder="Payment Method (if card, put 4 last digits) *"></input>
                   </div>
                 </div>
                 <div className={classes.frm}>
@@ -106,12 +102,12 @@ const PlaceOrder = () => {
                 </div>
                 <div>
                   <div className={classes.type_inpts}>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
-                    <div className={classes.type_inpt}></div>
+                    <input className={classes.type_inpt} placeholder="First Name *"></input>
+                    <input className={classes.type_inpt} placeholder="Last Name * "></input>
+                    <input className={classes.type_inpt} placeholder="Street Address 1 *"></input>
+                    <input className={classes.type_inpt} placeholder="Postal / Zip Code *"></input>
+                    <input className={classes.type_inpt} placeholder="City *"></input>
+                    <input className={classes.type_inpt} placeholder="State / Province *"></input>
                   </div>
                   <div className={classes.line_inpt}>
                     <div className={classes.inpt}>

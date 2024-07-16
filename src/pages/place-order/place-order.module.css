@@ -255,6 +255,7 @@
   margin-top: 20px;
   margin-left: 32px;
   margin-right: 32px;
+  display: grid;
 }
 
 @media screen and (max-width: 1220px) {
@@ -390,6 +391,7 @@
   }
   .type_inpt {
     height: 28.8px;
+    max-width: 114px;
   }
   .line_inpt {
     margin-left: 19px;
