@@ -7,6 +7,17 @@ import { ReactComponent as Check } from "../../images/check.svg";
 
 const PlaceOrder = () => {
   const [isFeedBack, setIsFeedBack] = useState(true);
+  const [soc, setSoc] = useState("");
+  const [rec, setRec] = useState("");
+  const [socPanel, setSocPanel] = useState(false);
+  const [recPanel, setRecPanel] = useState(false);
+
+  function setSc(params) {
+    setSoc(params);
+  }
+  function setRc(params) {
+    setRec(params);
+  }
 
   return (
     <div>
@@ -54,13 +65,71 @@ const PlaceOrder = () => {
                   </p>
                 </div>
                 <div className={classes.inpts}>
-                  <div className={classes.inpt}>
-                    <span>Telegram / Email / WhatsApp *</span>
+                  <div
+                    onClick={() => setSocPanel(!socPanel)}
+                    className={classes.inpt}
+                    style={
+                      socPanel
+                        ? {
+                            borderBottomLeftRadius: "0px",
+                            borderBottomRightRadius: "0px",
+                          }
+                        : null
+                    }
+                  >
+                    <span>
+                      {soc === "" ? (
+                        "Telegram / Email / WhatsApp *"
+                      ) : (
+                        <span style={{ color: "#000" }}>{soc}</span>
+                      )}
+                    </span>
                     <Chevron />
+                    {socPanel && (
+                      <div className={classes.sl}>
+                        <p onClick={() => setSc("Telegram")}>Telegram</p>
+                        <p onClick={() => setSc("Email")}>Email</p>
+                        <p onClick={() => setSc("WhatsApp")}>WhatsApp</p>
+                      </div>
+                    )}
                   </div>
-                  <div className={classes.inpt}>
-                    <span>What would you like to receive? *</span>
+                  <div
+                    onClick={() => setRecPanel(!recPanel)}
+                    className={classes.inpt}
+                    style={
+                      recPanel
+                        ? {
+                            borderBottomLeftRadius: "0px",
+                            borderBottomRightRadius: "0px",
+                          }
+                        : null
+                    }
+                  >
+                    <span>
+                      {rec === "" ? (
+                        "What would you like to receive? *"
+                      ) : (
+                        <span style={{ color: "#000" }}>{rec}</span>
+                      )}
+                    </span>
                     <Chevron />
+                    {recPanel && (
+                      <div className={classes.sl}>
+                        <p
+                          onClick={() =>
+                            setRc("Refund the money for the product")
+                          }
+                        >
+                          Refund the money for the product
+                        </p>
+                        <p onClick={() => setRc("Order for you")}>
+                          Order for you
+                        </p>
+                        <p onClick={() => setRc("Unblock account")}>
+                          Unblock account
+                        </p>
+                      </div>
+                    )}
                   </div>
                   <textarea className={classes.textarea}></textarea>
                 </div>
@@ -71,30 +140,121 @@ const PlaceOrder = () => {
                   <p className={classes.form_header}>Details</p>
                 </div>
                 <div className={classes.inpts}>
-                  <div className={classes.inpt}>
-                    <span>Telegram / Email / WhatsApp *</span>
+                  <div
+                    onClick={() => {
+                      setRecPanel(false);
+                      setSocPanel(!socPanel);
+                    }}
+                    className={classes.inpt}
+                    style={
+                      socPanel
+                        ? {
+                            borderBottomLeftRadius: "0px",
+                            borderBottomRightRadius: "0px",
+                          }
+                        : null
+                    }
+                  >
+                    <span>
+                      {soc === "" ? (
+                        "Telegram / Email / WhatsApp *"
+                      ) : (
+                        <span style={{ color: "#000" }}>{soc}</span>
+                      )}
+                    </span>
                     <Chevron />
+                    {socPanel && (
+                      <div className={classes.sl}>
+                        <p onClick={() => setSc("Telegram")}>Telegram</p>
+                        <p onClick={() => setSc("Email")}>Email</p>
+                        <p onClick={() => setSc("WhatsApp")}>WhatsApp</p>
+                      </div>
+                    )}
                   </div>
-                  <div className={classes.inpt}>
-                    <span>What would you like to receive? *</span>
+                  <div
+                    onClick={() => {
+                      setSocPanel(false)
+                      setRecPanel(!recPanel);
+                    }}
+                    className={classes.inpt}
+                    style={
+                      recPanel
+                        ? {
+                            borderBottomLeftRadius: "0px",
+                            borderBottomRightRadius: "0px",
+                          }
+                        : null
+                    }
+                  >
+                    <span>
+                      {rec === "" ? (
+                        "What would you like to receive? *"
+                      ) : (
+                        <span style={{ color: "#000" }}>{rec}</span>
+                      )}
+                    </span>
                     <Chevron />
+                    {recPanel && (
+                      <div className={classes.sl}>
+                        <p
+                          onClick={() =>
+                            setRc("Refund the money for the product")
+                          }
+                        >
+                          Refund the money for the product
+                        </p>
+                        <p onClick={() => setRc("Order for you")}>
+                          Order for you
+                        </p>
+                        <p onClick={() => setRc("Unblock account")}>
+                          Unblock account
+                        </p>
+                      </div>
+                    )}
                   </div>
-                  <textarea className={classes.textarea} placeholder="A comment"></textarea>
+                  <textarea
+                    className={classes.textarea}
+                    placeholder="A comment"
+                  ></textarea>
                 </div>
                 <div className={classes.frm}>
                   <p className={classes.form_header}>Order Information</p>
                 </div>
                 <div>
                   <div className={classes.type_inpts}>
-                    <input className={classes.type_inpt} type="email" placeholder="Email Address *"></input>
-                    <input className={classes.type_inpt} placeholder="Total Billed Amount (tax & ship… * "></input>
-                    <input className={classes.type_inpt}  placeholder="Order ID/Number *"></input>
-                    <input className={classes.type_inpt}  placeholder="Tracking Number(s) *"></input>
-                    <input className={classes.type_inpt} type="email" placeholder="Email Address *"></input>
-                    <input className={classes.type_inpt} placeholder="Total Billed Amount (tax & ship…"></input>
+                    <input
+                      className={classes.type_inpt}
+                      type="email"
+                      placeholder="Email Address *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="Total Billed Amount (tax & ship… * "
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="Order ID/Number *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="Tracking Number(s) *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      type="email"
+                      placeholder="Email Address *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="Total Billed Amount (tax & ship…"
+                    ></input>
                   </div>
-                  <div className={classes.line_inpt} >
-                    <input className={classes.type_inpt} style={{maxWidth: "none"}} placeholder="Payment Method (if card, put 4 last digits) *"></input>
+                  <div className={classes.line_inpt}>
+                    <input
+                      className={classes.type_inpt}
+                      style={{ maxWidth: "none" }}
+                      placeholder="Payment Method (if card, put 4 last digits) *"
+                    ></input>
                   </div>
                 </div>
                 <div className={classes.frm}>
@@ -102,12 +262,30 @@ const PlaceOrder = () => {
                 </div>
                 <div>
                   <div className={classes.type_inpts}>
-                    <input className={classes.type_inpt} placeholder="First Name *"></input>
-                    <input className={classes.type_inpt} placeholder="Last Name * "></input>
-                    <input className={classes.type_inpt} placeholder="Street Address 1 *"></input>
-                    <input className={classes.type_inpt} placeholder="Postal / Zip Code *"></input>
-                    <input className={classes.type_inpt} placeholder="City *"></input>
-                    <input className={classes.type_inpt} placeholder="State / Province *"></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="First Name *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="Last Name * "
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="Street Address 1 *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="Postal / Zip Code *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="City *"
+                    ></input>
+                    <input
+                      className={classes.type_inpt}
+                      placeholder="State / Province *"
+                    ></input>
                   </div>
                   <div className={classes.line_inpt}>
                     <div className={classes.inpt}>

@@ -153,7 +153,9 @@
   padding: 0px 16px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   gap: 16px;
+  cursor: pointer;
 }
 .inpt span {
   color: #8e90a6;
@@ -256,6 +258,27 @@
   margin-left: 32px;
   margin-right: 32px;
   display: grid;
+}
+.sl {
+  position: absolute;
+  background: #F8F8F8;
+  width: 100%;
+  z-index: 9;
+  top: 49px;
+  border: 1px solid rgba(44, 44, 44, 1);
+  left: -1px;
+  border-top: none;
+  min-height: 144px;
+  border-radius: 0px 0px 6px 6px;
+}
+.sl p {
+  height: 48px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1220px) {
@@ -396,5 +419,14 @@
   .line_inpt {
     margin-left: 19px;
     margin-right: 19px;
+  }
+  .sl {
+    top: 30px;
+    min-height: auto;
+  }
+  .sl p {
+    height: 30px;
+    font-size: 10px;
+
   }
 }
