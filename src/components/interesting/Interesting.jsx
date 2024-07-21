@@ -4,7 +4,7 @@ import { ReactComponent as Arrows } from "../../images/arrows.svg";
 import Reviews from "../../images/rev.png";
 import Team from "../../images/team.png";
 import Results from "../../images/results.png";
-import Reliable from "../../images/reliable.png";
+import Reliable from "../../images/Reliable service2.gif";
 
 const Interesting = () => {
   return (
@@ -47,7 +47,7 @@ const Interesting = () => {
               Feel free to work with us!
             </span>
           </div>
-          <img src={Reliable} />
+          <img src={Reliable} style={{width: "591px", height: "368px"}}/>
         </div>
         <div className={classes.box}>
           <img src={Results} />
