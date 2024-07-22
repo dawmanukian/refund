@@ -2,8 +2,8 @@ import React from "react";
 import classes from "./interesting.module.css";
 import Arrows from "../../images/down.gif";
 import Reviews from "../../images/rev.png";
-import Team from "../../images/team.png";
-import Results from "../../images/results.png";
+import Team from "../../images/Team-of-Lawyers2.gif";
+import Results from "../../images/Guaranteed-Results2.gif";
 import Reliable from "../../images/Reliable service2.gif";
 
 const Interesting = () => {
@@ -13,7 +13,14 @@ const Interesting = () => {
         Interesting? Check out the reviews below...
       </p>
       <div className={classes.arrows}>
-        <img src={Arrows} height={'164px'} width={'164px'} alt="" style={{objectFit: "contain"}}/>
+        <img
+          loading="lazy"
+          src={Arrows}
+          height={"164px"}
+          width={"164px"}
+          alt=""
+          style={{ objectFit: "contain" }}
+        />
       </div>
       <div>
         <div className={classes.box}>
@@ -25,10 +32,12 @@ const Interesting = () => {
               Feel free to work with us!
             </span>
           </div>
-          <img src={Reviews} />
+          <img src={Reviews} loading="lazy" />
         </div>
         <div className={classes.box}>
-          <img src={Team} />
+          <div style={{ minWidth: "591px", textAlign: "center" }}>
+            <img src={Team} height={"368px"} loading="lazy" />
+          </div>
           <div className={classes.texts}>
             <p className={classes.header}>Team of Lawyers</p>
             <span>
@@ -42,17 +51,24 @@ const Interesting = () => {
           <div className={classes.texts}>
             <p className={classes.header}>Reliable service</p>
             <span>
-            RefCat has been the most efficient, reliable, and reputable refunding service on the market for years. We will get your refund done without a doubt.Our customer support is available to answer over Telegram anytime, to any inquiries you may have in your mind.
+              RefCat has been the most efficient, reliable, and reputable
+              refunding service on the market for years. We will get your refund
+              done without a doubt.Our customer support is available to answer
+              over Telegram anytime, to any inquiries you may have in your mind.
             </span>
           </div>
           <img src={Reliable} style={{ width: "591px", height: "368px" }} />
         </div>
         <div className={classes.box}>
-          <img src={Results} />
+          <div style={{ minWidth: "591px", textAlign: "center" }}>
+            <img src={Results} height={"368px"} loading="lazy" />
+          </div>
           <div className={classes.texts}>
             <p className={classes.header}>Guaranteed Results</p>
             <span>
-            Even though words are nice, we focus on providing maximized results in as short timeframe as possible. Get in touch to learn more!
+              Even though words are nice, we focus on providing maximized
+              results in as short timeframe as possible. Get in touch to learn
+              more!
             </span>
           </div>
         </div>
