@@ -415,6 +415,7 @@
   .type_inpt {
     height: 28.8px;
     max-width: 114px;
+    font-size: 10px;
   }
   .line_inpt {
     margin-left: 19px;
