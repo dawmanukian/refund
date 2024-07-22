@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./interesting.module.css";
-import { ReactComponent as Arrows } from "../../images/arrows.svg";
+import Arrows from "../../images/down.gif";
 import Reviews from "../../images/rev.png";
 import Team from "../../images/team.png";
 import Results from "../../images/results.png";
@@ -13,7 +13,7 @@ const Interesting = () => {
         Interesting? Check out the reviews below...
       </p>
       <div className={classes.arrows}>
-        <Arrows />
+        <img src={Arrows} height={'164px'} width={'164px'} alt="" style={{objectFit: "contain"}}/>
       </div>
       <div>
         <div className={classes.box}>
