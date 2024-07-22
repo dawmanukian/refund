@@ -284,5 +284,6 @@
   }
   .phone_mobile {
     display: flex;
+    margin-bottom: 11px;
   }
 }

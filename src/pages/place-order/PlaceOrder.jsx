@@ -87,7 +87,7 @@ const PlaceOrder = () => {
                   isFeedBack ? { borderBottom: "2px solid #2c2c2c" } : null
                 }
               >
-                <span>Feedback</span>
+                <span>Order</span>
               </div>
               <div
                 onClick={() => setIsFeedBack(false)}
@@ -95,7 +95,7 @@ const PlaceOrder = () => {
                   !isFeedBack ? { borderBottom: "2px solid #2c2c2c" } : null
                 }
               >
-                <span>Order Now</span>
+                <span>Fast order</span>
               </div>
             </div>
             {isFeedBack ? (

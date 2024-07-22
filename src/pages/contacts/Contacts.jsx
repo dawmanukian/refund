@@ -53,21 +53,21 @@ const Contacts = () => {
       <div className={classes.soc}>
         <div className={classes.soc_data}>
           <div className={classes.sc_panel}>
-            <div className={classes.sc}>
+            <a href="https://t.me/RefCat_Connect" className={classes.sc}>
               <span className={classes.header}>Telegram</span>
               <Tg className={classes.icon} />
               <span className={classes.click}>Click here...</span>
-            </div>
-            <div className={classes.sc}>
+            </a>
+            <a href="https://t.me/RefCat_Connect" className={classes.sc}>
               <span className={classes.header}>Discord</span>
               <Dc className={classes.icon} />
               <span className={classes.click}>Click here...</span>
-            </div>
-            <div className={classes.sc}>
+            </a>
+            <a href="https://t.me/RefCat_Connect" className={classes.sc}>
               <span className={classes.header}>Gmail</span>
               <Mail className={classes.icon} />
               <span className={classes.click}>Click here...</span>
-            </div>
+            </a>
           </div>
           <div className={classes.soc_inf}>
             <p className={classes.help}>Can't get over?</p>
