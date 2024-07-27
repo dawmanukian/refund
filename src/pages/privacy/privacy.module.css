@@ -90,3 +90,63 @@ li {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
+@media screen and (max-width: 900px) {
+  .info {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+  }
+  .data {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .data img {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+  .header {
+    height: 424px;
+    background-image: url(../../images/prv.png);
+  }
+
+  .data p {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+  }
+  .head {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  .texts {
+    margin-top: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 32px;
+  }
+  .texts p {
+    max-width: 260.6px;
+    line-height: normal;
+  }
+  .text {
+    max-width: 313.8px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pick {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+  .page {
+    margin-top: 32px;
+  }
+}
