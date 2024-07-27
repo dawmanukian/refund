@@ -6,7 +6,7 @@ const Terms = () => {
     <div>
       <div className={classes.header}>
         <div className={classes.data}>
-          <div style={{ marginTop: "153px" }}>
+          <div className={classes.d}>
             <span className={classes.info}>
               Our measure of success? Your satisfaction
             </span>
